@@ -1,0 +1,140 @@
+/***************************/
+/*      Global Styles      */
+/***************************/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/******************************/
+/*      Home Page Styles      */
+/******************************/
+
+.home-page, .movie-details-id, .about-page, .services-page{
+  padding-top: 80px;
+}
+
+.home-page{
+  .movie-genre{
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  hr{
+    margin-top: 0;
+  }
+  .card-title{
+    margin-bottom: 0.2rem;
+  }
+}
+
+/******************************/
+/*      Navbar Styles         */
+/******************************/
+
+.navbar{
+  min-height: 80px;
+  text-align: center;
+  > li > a {
+    font-size: 19px;
+  }
+}
+.navbar-brand{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/******************************/
+/*      Carousel Styles       */
+/******************************/
+
+.react-multiple-carousel__arrow{
+  height: 97%;
+  border-radius: 0 !important;
+}
+.react-multiple-carousel__arrow--left{
+  left: 0 !important;
+}
+.react-multiple-carousel__arrow--right{
+  right: 0 !important;
+}
+.react-multi-carousel-list.carousel-container {
+  margin-bottom: 30px;
+}
+.carousel-img{
+  border: 1px solid #CCC;
+  padding: 2px;
+  width: 100%;
+  transition: all 0.5 ease-in-out;
+  -moz-transition: all ease-in-out 0.2s;
+}
+.carousel-custom-item{
+  margin: 5px;
+  cursor: pointer;
+
+}
+.carousel-custom-item:hover { 
+  .carousel-img{
+    background-color: #CCC;
+    transform: rotate(15) scale(1.5);
+    -moz-transform: rotate(15deg) scale(1.1);
+  }
+  .carousel-caption.d-none.d-md-block h5{
+
+    background: rgba(255, 255, 255, 0.8);
+    transform: rotate(15deg) scale(1.1) translate(-29px);
+  }
+}
+.carousel-custom-item:hover 
+.carousel-caption.d-none.d-md-block{
+  left: 0;
+  right: 0;
+}
+
+.carousel-caption.d-none.d-md-block h5 {
+  padding: 0 17px;
+  color: crimson;
+  background: rgba(255,255,255,0.8);
+  transition: all 0.5 ease-in-out;
+  -moz-transition: all ease-in-out 0.2s;
+}
+
+/******************************/
+/*      movie Detail Styles     */
+/******************************/
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/******************************/
+/*      movie [id] Styles     */
+/******************************/
+
+.display-4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/******************************/
+/*      Sidebar Styles     */
+/******************************/
+
+
+.list-group-item.d-flex.justify-content-between.align-items-center{
+  cursor: pointer;
+}
